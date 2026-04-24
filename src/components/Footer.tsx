@@ -21,13 +21,20 @@ export function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="#"
+            href="mailto:derenchuk.vip@gmail.com"
+            className="text-xs text-muted-foreground hover:text-primary transition-colors font-mono"
+          >
+            derenchuk.vip@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="h-9 w-9 grid place-items-center rounded-lg border border-border hover:border-primary/60 hover:text-primary transition-colors"
           >
             <Linkedin className="h-4 w-4" />
           </a>
-          <span className="text-xs text-muted-foreground">Built by Dart Tech</span>
         </div>
       </div>
     </footer>
