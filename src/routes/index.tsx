@@ -1,26 +1,46 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Stats } from "@/components/Stats";
+import { ProblemSolution } from "@/components/ProblemSolution";
+import { Creators } from "@/components/Creators";
+import { Services } from "@/components/Services";
+import { Process } from "@/components/Process";
+import { Booking } from "@/components/Booking";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Dart Marketing — Precision Influence for the Baltic Market" },
+      {
+        name: "description",
+        content:
+          "Dart Marketing Agency: data-driven influencer marketing, UGC production and performance scaling for the Lithuanian and Baltic market.",
+      },
+      { property: "og:title", content: "Dart Marketing — Precision Influence for the Baltic Market" },
+      {
+        property: "og:description",
+        content:
+          "Influencer marketing, UGC and performance scale. 300k+ monthly reach, 17+ vetted creators, 8.5% avg engagement.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <Stats />
+      <ProblemSolution />
+      <Creators />
+      <Services />
+      <Process />
+      <Booking />
+      <Footer />
+    </main>
+  );
 }
