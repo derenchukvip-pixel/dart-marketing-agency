@@ -29,16 +29,26 @@ export function Booking() {
                 pricing tiers.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <Button variant="hero" size="xl">
-                  Book Discovery Call <ArrowRight className="h-4 w-4" />
+                <Button variant="hero" size="xl" asChild>
+                  <a href="https://calendly.com/derenchuk-vip" target="_blank" rel="noopener noreferrer">
+                    Book Discovery Call <ArrowRight className="h-4 w-4" />
+                  </a>
                 </Button>
-                <Button variant="outlineGlow" size="xl">Email Us</Button>
+                <Button variant="outlineGlow" size="xl" asChild>
+                  <a href="mailto:derenchuk.vip@gmail.com">Email Us</a>
+                </Button>
               </div>
+              <a
+                href="mailto:derenchuk.vip@gmail.com"
+                className="mt-4 inline-block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
+              >
+                derenchuk.vip@gmail.com
+              </a>
             </div>
 
-            {/* Calendly placeholder */}
-            <div className="glass rounded-2xl p-6 border border-border">
-              <div className="flex items-center gap-3">
+            {/* Calendly embed */}
+            <div className="glass rounded-2xl p-3 border border-border overflow-hidden">
+              <div className="flex items-center gap-3 px-3 pt-2 pb-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/30">
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
@@ -47,19 +57,13 @@ export function Booking() {
                   <div className="text-xs text-muted-foreground">Live Calendly · Vilnius (EET)</div>
                 </div>
               </div>
-              <div className="mt-6 grid grid-cols-3 gap-2 text-center text-sm">
-                {["Mon", "Tue", "Wed", "Thu", "Fri", "+more"].map((d) => (
-                  <div
-                    key={d}
-                    className="rounded-lg border border-border bg-background/40 py-3 hover:border-primary/60 hover:text-primary transition-colors cursor-pointer"
-                  >
-                    {d}
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 text-xs text-muted-foreground text-center">
-                Calendly widget loads here
-              </div>
+              <iframe
+                src="https://calendly.com/derenchuk-vip?hide_gdpr_banner=1&background_color=1a1f2e&text_color=f5f7fa&primary_color=4ade80"
+                title="Book a call with Dart Marketing"
+                className="w-full rounded-xl bg-background"
+                style={{ height: 520, border: 0 }}
+                loading="lazy"
+              />
             </div>
           </div>
         </motion.div>

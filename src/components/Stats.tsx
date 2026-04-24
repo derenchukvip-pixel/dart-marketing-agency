@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "300,000+", label: "Monthly Reach" },
-  { value: "17+", label: "Vetted Creators" },
-  { value: "8.5%", label: "Avg. Engagement Rate" },
+  { value: "150,000+", label: "Combined Monthly Reach" },
+  { value: "6+", label: "Vetted Baltic Creators" },
+  { value: "5–8%", label: "Avg. Engagement Rate" },
   { value: "100%", label: "Legal & Tax Compliant (LT)" },
 ];
 
