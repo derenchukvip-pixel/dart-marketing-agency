@@ -8,12 +8,12 @@ import darina from "@/assets/creators/darina.jpg";
 import valerie from "@/assets/creators/valerie.jpg";
 
 const creators = [
-  { handle: "heytolani", category: "Lifestyle", reach: "21k", img: heytolani },
-  { handle: "curly.and.lithuania", category: "Lifestyle", reach: "18k", img: curly },
-  { handle: "artem.derenchuk", category: "Tech / Business", reach: "12k", img: artem },
-  { handle: "paprasta_gaminti", category: "Food", reach: "47k", img: paprasta },
-  { handle: "darina_provilnius", category: "Vilnius / Lifestyle", reach: "33k", img: darina },
-  { handle: "valerie.leriee", category: "Beauty / Fashion", reach: "26k", img: valerie },
+  { handle: "heytolani", category: "Lifestyle", reach: "108k", img: heytolani },
+  { handle: "curly.and.lithuania", category: "Lifestyle", reach: "75k", img: curly },
+  { handle: "artem.derenchuk", category: "Tech / Business", reach: "36k", img: artem },
+  { handle: "paprasta_gaminti", category: "Food", reach: "48k", img: paprasta },
+  { handle: "darina_provilnius", category: "Vilnius / Lifestyle", reach: "16k", img: darina },
+  { handle: "valerie.leriee", category: "Beauty / Fashion", reach: "33k", img: valerie },
 ];
 
 export function Creators() {
