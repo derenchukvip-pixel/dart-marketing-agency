@@ -8,11 +8,11 @@ import darina from "@/assets/creators/darina.jpg";
 import valerie from "@/assets/creators/valerie.jpg";
 
 const creators = [
-  { handle: "heytolani", category: "Lifestyle", reach: "108k", img: heytolani },
+  { handle: "heytolani", category: "Beauty / Fashion", reach: "108k", img: heytolani },
   { handle: "curly.and.lithuania", category: "Lifestyle", reach: "75k", img: curly },
-  { handle: "artem.derenchuk", category: "Tech / Business", reach: "36k", img: artem },
+  { handle: "artem.derenchuk", category: "Street content", reach: "36k", img: artem },
   { handle: "paprasta_gaminti", category: "Food", reach: "48k", img: paprasta },
-  { handle: "darina_provilnius", category: "Vilnius / Lifestyle", reach: "16k", img: darina },
+  { handle: "darina_provilnius", category: "Reviews", reach: "16k", img: darina },
   { handle: "valerie.leriee", category: "Beauty / Fashion", reach: "33k", img: valerie },
 ];
 
