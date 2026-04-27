@@ -54,7 +54,7 @@ export function Creators() {
                   width={512}
                   height={512}
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 text-[10px] font-mono px-2 py-0.5 rounded-full bg-background/70 backdrop-blur border border-border">
                   {c.category}
